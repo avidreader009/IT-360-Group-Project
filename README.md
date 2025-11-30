@@ -5,6 +5,7 @@ The issue we solved with our tool is inefficient forensic data gathering. Our to
 
 ## List of Features
 Encryption (AES-256) & Decryption Modes
+
 Gathers the following information:
   - Computer Information (OS details, Bios details, Timezone)
   - Running Processes and Version
