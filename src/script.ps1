@@ -10,14 +10,20 @@ Get-ComputerInfo -Property "Windows*", "Bios*", "Os*", "TimeZone" | Out-File -Fi
 # get running processes and version
 Get-Process | ForEach-Object {
     try {
-        ($_.FileVersionInfo) | Out-File -FilePath .\Information.txt -Append
+        # checks if a path exists for each process. if so, version information is retrieved and added to the file
+        if ($_.Path) {
+            $versionInfo = (Get-Item $_.Path).VersionInfo
+            Write-Output "$($_.Name) $($versionInfo.FileVersion)"
+        }
+        # if a path doesn't exist, the below text is added to the file
+        else {
+            Write-Output "$($_.Name) has no executable path. Version information cannot be obtained."
+        }
     }
     catch {
-        # error is that process has no version information
-        # output the processes without the version information
-        $_.ProcessName | Out-File -FilePath .\Information.txt -Append
+        Write-Output "$($_.Name) had an error occur."
     }
-}
+} | Out-File -FilePath .\Information.txt -Append
 
 # output io devices header to file
 "I/O Devices: " | Out-File -FilePath .\Information.txt -Append
