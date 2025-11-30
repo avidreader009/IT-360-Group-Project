@@ -6,6 +6,6 @@ The issue we solved with our tool is inefficient forensic data gathering. Our to
 ## List of Features
 
 ## How to Setup and Run Tool
-Our tool is intended for Windows devices. Ensure that you have an app that can run ps1 files. Download the **script.ps1** file within the **src** folder. Run the **script.ps1** file using the application of your choosing. The output file will appear in the same directory that the file is run from.
+Our tool is intended for Windows devices. Ensure that you have an app that can run ps1 files. Download the **getInfo.ps1** file within the **src** folder. Run the **getInfo.ps1** file using the application of your choosing. The output file will appear in the same directory that the file is run from.
 
 Apps we've tested with: Windows Terminal, Windows PowerShell ISE (ran as administrator)
