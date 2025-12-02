@@ -14,7 +14,14 @@ Gathers the following information:
 
 ## How to Setup and Run Tool
 Our tool is intended for Windows devices. Ensure that you have an app that can run ps1 files. Download the **getInfo.ps1** file within the **src** folder. Run the **getInfo.ps1** file using the application of your choosing. 
+
 For encryption, run the command **.\getInfo.ps1 -Mode Encrypt**. For decryption, run the command **.\getInfo.ps1 -Mode Decrypt**. 
+
 The output file will appear in the same directory that the command is run from.
 
-Apps we've tested our script with: Windows Terminal, Windows PowerShell ISE (ran as administrator), Windows Powershell
+### Apps we've tested our script with: 
+- Windows Terminal
+- Windows Powershell
+- Windows PowerShell ISE (ran as administrator)
+
+## Video Link
