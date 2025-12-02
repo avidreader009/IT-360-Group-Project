@@ -20,7 +20,6 @@ For encryption, run the command **.\getInfo.ps1 -Mode Encrypt**. For decryption,
 The output file will appear in the same directory that the command is run from.
 
 ### Apps we've tested our script with: 
-- Windows Terminal
 - Windows Powershell
 - Windows PowerShell ISE (ran as administrator)
 
