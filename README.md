@@ -13,9 +13,9 @@ Gathers the following information:
   - System Log
 
 ## How to Setup and Run Tool
-Our tool is intended for Windows devices. Ensure that you have an app that can run ps1 files. Download the **getInfo.ps1** file within the **src** folder. Run the **getInfo.ps1** file using the application of your choosing. 
+Our tool is intended for Windows devices. Ensure that you have an app that can run ps1 files. Download the **getInfo.ps1** file located within the **src** folder.
 
-For encryption, run the command **.\getInfo.ps1 -Mode Encrypt**. For decryption, run the command **.\getInfo.ps1 -Mode Decrypt**. 
+For data gathering and file encryption, run the command **.\getInfo.ps1 -Mode Encrypt**. For file decryption, run the command **.\getInfo.ps1 -Mode Decrypt**. 
 
 The output file will appear in the same directory that the command is run from.
 
